@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>xxx</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css" />
+    <link rel="stylesheet" type="text/css" href="../css/aui.css" />
+    <style media="screen">
+      .my_popup{
+        width:90%;
+        height:50%;
+        margin-left: 5%;
+        margin-top: 10px;
+      }
+
+      #nav_my{
+        position: relative;
+        width: 100%;
+        height: auto;
+        background-color: pink;
+      }
+      #first_history{
+        position: relative;
+        width: 100%;
+        height: 150px;
+        background-color: gray;
+      }
+      .leftTop{
+        position: absolute;
+              margin: 10px 10px;
+              font-size: 1em
+      }
+      .rightTop{
+        position: absolute;
+          right:20px;
+        top: 10px;
+        font-size: 0.8em;
+      }
+      .leftButtom{
+        position: absolute;
+        margin-left: 10px;
+        padding-top: 25px;
+        font-size: 0.8em;
+      }
+      .rightButtom{
+        position: absolute;
+        padding-top: 20px;
+        right: 25px;
+        font-size: 0.8em;
+
+      }
+      section{
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        font-size: 0.7em;
+        margin-top: 10px;
+      }
+    </style>
+</head>
+<body>
+  <!-- <div onclick="test()"style="margin-top:150px;"> 惦记我</div> -->
+
+  <div class="aui-btn aui-btn-primary" aui-popup-for="top-left" style="margin-top:50px;">左上角</div>
+  <div class="aui-popup my_popup " id="top-left" style="width:90%; height:50%">
+    <!-- <div class="aui-popup-arrow"></div> -->
+    <div class="aui-popup-content" >
+      <header>
+        <div style="text-align:center;">
+          <h1 >我的报修</h1>
+        </div>
+
+      </header>
+       <nav id="nav_my">
+      	<hr class='aui-hr' />
+        <div id="first_history">
+         <div class="leftTop">数据库报修</div>
+           <div class="rightTop">待审核</div>
+           <br/>
+           <div class="leftButtom">2019-01-30 14：28：56</div>
+           <div class="rightButtom">修改</div>
+         </div>
+        	<hr class='aui-hr' />
+          <div id="first_history">
+         <div class="leftTop">数据库报修</div>
+           <div class="rightTop">服务派单</div>
+           <br/>
+           <div class="leftButtom">2019-01-30 14：28：56</div>
+           <div class="rightButtom">修改</div>
+         </div>
+        	<hr class='aui-hr' />
+         <div id="first_history">
+         <div class="leftTop">数据库报修</div>
+           <div class="rightTop">已完成</div>
+           <br/>
+           <div class="leftButtom">2019-01-30 14：28：56</div>
+           <div class="rightButtom">修改</div>
+         </div>
+      	<hr class='aui-hr' />
+      </nav>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="../script/aui.js" ></script>
+<script type="text/javascript" src="../script/aui-popup.js" ></script>
+<script type="text/javascript">
+   var popup = new auiPopup();
+  var windowH;
+  var windowL;
+apiready=function(){
+   windowH = api.winHeight;
+   windowL =api.winWidth;
+  // var footer_h = $api.offset( $api.dom('footer')).h;
+   api.parseTapmode();
+}
+
+function test(){
+  api.openFrame({
+      name: 'frame1',
+      url: '../html/frame1.html',
+      rect: {
+          x: 10,
+          y: 50,
+          w: windowL-20,
+          h: windowH-100
+      },
+      pageParam: {
+          name: 'test'
+      },
+      bounces: true,
+      bgColor: 'rgba(0,0,0,0)',
+      vScrollBarEnabled: true,
+      hScrollBarEnabled: true
+  });
+
+}
+</script>
+</html>

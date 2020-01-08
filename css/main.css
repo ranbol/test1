@@ -1,0 +1,143 @@
+ body{
+            font-size: 1.2em;
+               width: 100%;
+               height:800px;
+               font-family: inherit;
+               /*background-color: pink;*/
+            /*    background: url("../image/back.jpg") no-repeat; */
+            }
+    	header .top{
+    		position: relative;
+    		width: 100%;
+    		height: 80px;
+    		/* background-color: yellow; */
+    	}
+    	header .left{
+    		position: absolute left;
+    		width: 50px;
+    		height: 50px;
+    		background-color: none;
+    		float: left;
+    	}
+    	header .center{
+             position: relative;
+             width: 100%
+             height: 50px;
+              text-align: left;
+            /*  background-image: url(../image/logo2.png); */
+    	}
+
+    	img{
+    		position: absolute;
+    		width: 100%;
+    		height: 50px;
+    	}
+        nav{
+            position: relative;
+            width: 100%;
+            height: 300px;
+            margin-top: 0px;
+        }
+    	nav #nav_header{
+    		/*弹性式布局*/
+    		display: -webkit-box;
+    	    display: -webkit-flex;
+    	    display: flex;
+    	    -webkit-blox-orient: horizontal;
+    	    -webkit-flex-flow: row;
+    	    flex-flow: row;
+    		position: relative;
+    		width: 100%;
+    		height: 40px;
+    		/*background-color: #FF9797;*/
+    	}
+    	nav #nav_header .menu{
+    		-webkit-box-flex: 1;
+            -webkit-flex: 1;
+            flex: 1;
+            width: 100%;
+            height: 50px;
+            line-height: 40px;
+            font-size: 13px; color: white; text-align: center;
+    	}
+    	nav .menu.selected{
+    		font-size: 14px; color: #fff; font-weight: bolder;
+    	}
+    	section{
+    		display: -webkit-box;
+    	    display: -webkit-flex;
+    	    display: flex;
+    	    -webkit-blox-orient: horizontal;
+    	    -webkit-flex-flow: row;
+    	    flex-flow: row;
+    		position: relative;
+    		width: 100%;
+    		height: 40px;
+    		/*background-color: #FF9797;*/
+    	}
+    	 section .menu{
+    	 	-webkit-box-flex: 1;
+            -webkit-flex: 1;
+            flex: 1;
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            font-size: 13px; color: white; text-align: center;
+    	 }
+    	 section .menu.selected{
+    		font-size: 14px; color: #fff; font-weight: bolder;
+    	}
+    	nav #menus{
+                            position: relative;
+                            width: 100%
+                            height:500px;
+                            background-color: none;
+                            line-height: 40px;
+                            font-size: 13px; color: red; text-align: center;
+                        }
+    	.box {
+    		position: relative;
+    		width: 100%;
+    		height: 130px;
+    		background-color: none;
+    	}
+        footer{
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-blox-orient: horizontal;
+            -webkit-flex-flow: row;
+            flex-flow: row;
+            position: absolute;
+            width: 100%;
+            height: 60px;
+            background-color: white;
+            border: yellowgreen solid 0.1em;
+            bottom: 0;
+            font-size: 15px;
+        }
+/* #menus{
+	position: relative;
+	width: 100%;
+	height: 300px;
+} */
+#first_ceng{
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	background: red;
+}
+#first_ceng .left{
+	position: absolute;
+	width: 49%；
+	height：99px;
+	border: yellow solid 1px;
+	background-color: red;
+}
+#first_ceng .right{
+	position: relative;
+	width: 49%;
+	height: 99px;
+	border: yellow solid 1px;
+	background-color: pink;
+}
